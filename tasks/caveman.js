@@ -5,7 +5,7 @@
 
 module.exports = function (grunt) {
 
-  var Caveman = require('./app/client/js/lib/caveman.js');
+  var Caveman = require('caveman');
 
   grunt.registerMultiTask('caveman', 'Compile caveman templates', function () {
     var path = require('path');
