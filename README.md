@@ -2,6 +2,12 @@
 
 Compile Caveman templates on the server-side using Grunt.
 
+## Installation
+
+```sh
+npm install grunt-contrib-caveman
+```
+
 ## Usage
 
 Add the caveman task to your Grunt config:
