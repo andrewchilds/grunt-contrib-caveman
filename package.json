@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-caveman",
   "description": "Pre-compile Caveman templates.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/andrewchilds/grunt-contrib-caveman",
   "author": {
     "name": "Andrew Childs"
