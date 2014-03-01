@@ -1,19 +1,19 @@
-# grunt-contrib-caveman
+# grunt-caveman
 
 Compile Caveman templates on the server-side using Grunt.
 
 ## Installation
 
 ```sh
-npm install grunt-contrib-caveman
+npm install grunt-caveman
 ```
 
 ## Usage
 
-Add the caveman task to your Grunt config:
+Add the grunt-caveman task to your Grunt config:
 
 ```js
-grunt.loadNpmTasks('grunt-contrib-caveman');
+grunt.loadNpmTasks('grunt-caveman');
 ```
 
 ## Example Configuration

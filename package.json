@@ -1,17 +1,17 @@
 {
-  "name": "grunt-contrib-caveman",
+  "name": "grunt-caveman",
   "description": "Pre-compile Caveman templates.",
   "version": "0.1.1",
-  "homepage": "https://github.com/andrewchilds/grunt-contrib-caveman",
+  "homepage": "https://github.com/andrewchilds/grunt-caveman",
   "author": {
     "name": "Andrew Childs"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/andrewchilds/grunt-contrib-caveman.git"
+    "url": "git://github.com/andrewchilds/grunt-caveman.git"
   },
   "bugs": {
-    "url": "https://github.com/andrewchilds/grunt-contrib-caveman/issues"
+    "url": "https://github.com/andrewchilds/grunt-caveman/issues"
   },
   "license": "MIT",
   "dependencies": {

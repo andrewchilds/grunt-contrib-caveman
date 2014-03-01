@@ -1,6 +1,6 @@
 /*
- * grunt-contrib-caveman
- * https://github.com/andrewchilds/grunt-contrib-caveman
+ * grunt-caveman
+ * https://github.com/andrewchilds/grunt-caveman
  */
 
 module.exports = function (grunt) {
