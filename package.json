@@ -1,7 +1,7 @@
 {
   "name": "grunt-caveman",
   "description": "Pre-compile Caveman templates.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/andrewchilds/grunt-caveman",
   "author": {
     "name": "Andrew Childs"
@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "caveman": "0.1.0"
+    "caveman": "0.1.1"
   },
   "peerDependencies": {
     "grunt": "~0.4.0"
