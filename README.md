@@ -1,6 +1,6 @@
 # grunt-caveman
 
-Compile Caveman templates on the server-side using Grunt.
+Compile Caveman templates on the server-side using Grunt. Optionally render templates on the server-side as well.
 
 ## Installation
 
@@ -16,7 +16,7 @@ Add the grunt-caveman task to your Grunt config:
 grunt.loadNpmTasks('grunt-caveman');
 ```
 
-## Example Configuration
+### Server-side compiling, client-side rendering
 
 ```js
 caveman: {
@@ -27,7 +27,7 @@ caveman: {
 }
 ```
 
-## Using pre-compiled templates on the client
+### Using pre-compiled templates on the client
 
 ```js
 var myTemplateData = { foo: [1, 2, 3], bar: true };
@@ -35,6 +35,21 @@ var html = Caveman.render('myTemplateName', myTemplateData);
 document.getElementById('foo').innerHTML = html;
 ```
 
+### Server-side compiling and rendering
+
+```js
+caveman: {
+  compile: {
+    src: ['path/to/templates/*.html'],
+    render: {
+      'indexPage': 'public/index.html',
+      'aboutPage': 'public/about/index.html',
+      'contactPage': 'public/contact/index.html'
+    }
+  }
+}
+```
+
 ## License
 
-MIT. Copyright &copy; 2014 Andrew Childs
+MIT. Copyright &copy; 2015 Andrew Childs
