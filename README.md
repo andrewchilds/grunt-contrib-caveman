@@ -27,7 +27,7 @@ caveman: {
 }
 ```
 
-### Using pre-compiled templates on the client
+### Rendering pre-compiled templates on the client-side:
 
 ```js
 var myTemplateData = { foo: [1, 2, 3], bar: true };
@@ -41,6 +41,10 @@ document.getElementById('foo').innerHTML = html;
 caveman: {
   compile: {
     src: ['path/to/templates/*.html'],
+    data: {
+      foo: [1, 2, 3],
+      bar: true
+    },
     render: {
       'indexPage': 'public/index.html',
       'aboutPage': 'public/about/index.html',

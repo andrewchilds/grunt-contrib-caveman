@@ -20,6 +20,10 @@ caveman: {
 caveman: {
   compile: {
     src: ['path/to/templates/*.html'],
+    data: {
+      foo: [1, 2, 3],
+      bar: true
+    },
     render: {
       'indexPage': 'public/index.html',
       'aboutPage': 'public/about/index.html',
@@ -36,7 +40,7 @@ module.exports = function (grunt) {
       exports.compileTemplates(grunt, this.data.src, this.data.dest);
     }
     if (this.data.src && this.data.render) {
-      exports.compileAndRenderTemplates(grunt, this.data.src, this.data.render);
+      exports.compileAndRenderTemplates(grunt, this.data.src, this.data.render, this.data.data);
     }
   });
 };
@@ -66,7 +70,7 @@ exports.compileTemplates = function (grunt, src, templateFile) {
     templateFile.cyan + '.');
 };
 
-exports.compileAndRenderTemplates = function (grunt, src, files) {
+exports.compileAndRenderTemplates = function (grunt, src, files, data) {
   var path = require('path');
   var Caveman = require('caveman');
   var _ = require('lodash');
@@ -86,7 +90,7 @@ exports.compileAndRenderTemplates = function (grunt, src, files) {
   });
 
   _.each(files, function (dest, template) {
-    grunt.file.write(dest, Caveman.render(template));
+    grunt.file.write(dest, Caveman.render(template, data || {}));
     grunt.log.writeln(template.cyan + ' -> ' + dest.cyan);
   });
 };
