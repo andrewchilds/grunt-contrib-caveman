@@ -56,4 +56,4 @@ caveman: {
 
 ## License
 
-MIT. Copyright &copy; 2015 Andrew Childs
+MIT. Copyright &copy; 2016 Andrew Childs
