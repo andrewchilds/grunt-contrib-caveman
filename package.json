@@ -19,9 +19,13 @@
     "lodash": "2.4.1"
   },
   "peerDependencies": {
-    "grunt": "~0.4.0"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
-    "gruntplugin", "caveman", "javascript", "template", "html"
+    "gruntplugin",
+    "caveman",
+    "javascript",
+    "template",
+    "html"
   ]
 }
